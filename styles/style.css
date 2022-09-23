@@ -1,0 +1,185 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgba(252, 239, 212, 0.616);
+}
+
+.text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.content {
+  text-align: center;
+}
+
+.header {
+
+  width: 100%;
+  height: 100px;
+
+}
+
+.header h1 {
+  text-align: center;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*.header img {
+  width: 100px;
+  top: -145px;
+  left: -100px;
+position: relative;
+
+}*/
+
+#textBox {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+
+.selectBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.temps {
+  margin-top: 20px;
+  justify-content: center;
+  justify-items: center;
+  z-index: 2;
+}
+
+input {
+  height: 25px;
+  text-align: right;
+  width: 100px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+#btn {
+  background-image: url(/assets/reverse-svgrepo-com.svg);
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.convertBtn {
+  max-width: 200px;
+  max-height: 30px;
+  padding: 5px 8px;
+  border-radius: 10px;
+  border: 2px solid #008CBA;
+  font-size: 16px;
+  text-align: center;
+  margin: 10px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+
+}
+
+.convertBtn:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+select {
+  border-radius: 10px;
+  max-height: 30px;
+  height: 30px;
+  width: 200px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.tempImg {
+  position: absolute;
+  width: auto;
+  height: 260px;
+  left: 10px;
+  z-index: -1;
+  top: 250px;
+
+}
+
+.tempImgD {
+  position: absolute;
+  width: auto;
+  height: 260px;
+  right: 10px;
+  z-index: -1;
+  top: 250px;
+}
+
+.view {
+  opacity: 1;
+}
+
+.results {
+
+  transition-duration: 0.4s;
+  width: auto;
+  height: 50px;
+  align-items: center;
+  margin-top: 120px;
+  border-radius: 2px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 3rem;
+  background-color: #f1d09f;
+}
+
+p {
+  font-size: 30px;
+}
+
+
+.result-equals p {
+
+  text-align: center;
+}
+
+#formula {
+  transition-duration: 0.4s;
+  height: 50px;
+  align-items: center;
+  background-color: #f1d09f;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+#formula h3 {
+  font-size: 25px;
+}
+
+#formula p {
+  padding-left: 10px;
+  font-size: 25px;
+}
+
+.conversores {
+  display: flex;
+  flex-direction: column;
+}
+
+.conversores a {
+  padding-bottom: 15px;
+}

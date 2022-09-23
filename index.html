@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Temperaturas</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="header">
+        <h1>Conversor de temperatura</h1>
+      </div>
+      <div class="text">
+        <p>
+          Digite o numero da temperatura que deseja converter na caixa de texto
+          para ver o resultado.
+        </p>
+      </div>
+      <div class="temps">
+        <input id="textBox" type="number" />
+        <div class="selectBox">
+          <select onchange="converter()" name="unit_from" id="from_temperature">
+            <option value="celsius" selected="selected">Celsius (C)</option>
+            <option value="fahrenheit">Fahrenheit (F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+          </select>
+          <a
+            type="button"
+            id="btn"
+            onclick="alternar(),realizarConversao()"
+            href="#"
+          >
+          </a>
+          <div class="images">
+            <img class="tempImg" src="/assets/temperatura_maxima.png" alt="" />
+            <img class="tempImgD" src="/assets/1312331.png" alt="" />
+          </div>
+        </div>
+
+        <select
+          onchange="tempSaida()"
+          name="unit_from"
+          id="from_temperature_convert"
+        >
+          <option value="fahrenheit" selected="selected">Fahrenheit (F)</option>
+          <option value="celsius">Celsius (C)</option>
+          <option value="kelvin">Kelvin (K)</option>
+        </select>
+        <div class="buttonFix">
+          <button class="convertBtn" onclick="realizarConversao()">
+            Converter
+          </button>
+        </div>
+      </div>
+      <div id="resultBox" class="results" style="opacity: 0;">
+        <div id="from" class="result-from"></div>
+        <div id="text-result" class="result-equals"></div>
+        <div id="calc-result" class="result-to"></div>
+      </div>
+      <div id="formula" style="opacity: 0;"></div>
+    </div>
+  </body>
+  <script src="jquery-3.6.0.js"></script>
+  <script src="/scripts/conversorTemp.js"></script>
+</html>
