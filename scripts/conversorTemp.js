@@ -99,6 +99,10 @@ function realizarConversao() {
 
       textResult.innerHTML = `<p>é igual á</p>`
       tempResult.innerHTML = `<p>${arrendondar} K</p>`
+
+      formula.innerHTML = `
+      <h3>Formula</h3> 
+      <p> (°F -32) x 5/9 + 273,15 = K<p>`
     }
   }
   
@@ -112,6 +116,10 @@ function realizarConversao() {
 
       textResult.innerHTML = `<p>é igual á</p>`
       tempResult.innerHTML = `<p>${result} C</p>`
+
+      formula.innerHTML = `
+      <h3>Formula</h3> 
+      <p> K - 273,15 = °C<p>`
     }
   }
 
@@ -126,6 +134,10 @@ function realizarConversao() {
 
       textResult.innerHTML = `<p>é igual á</p>`
       tempResult.innerHTML = `<p>${arrendondar} F</p>`
+
+      formula.innerHTML = `
+      <h3>Formula</h3> 
+      <p>( K - 273,15) x 9/5 + 32 = °F<p>`
     }
   }
 
